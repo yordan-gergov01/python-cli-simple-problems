@@ -9,7 +9,6 @@ def clear_screen():
     print('\n' * 2)
 
 def show_remaining_sums(opened_sums):
-    """Показва останалите суми"""
     print("\n╔══════════════════════════════════╗")
     print("║    ОСТАНАЛИ СУМИ В КУТИИТЕ      ║")
     print("╠══════════════════════════════════╣")
@@ -21,7 +20,6 @@ def show_remaining_sums(opened_sums):
     print("╚══════════════════════════════════╝\n")
 
 def calculate_offer(remaining_sums, round_num):
-    """Изчислява офертата на банкера"""
     avg = sum(remaining_sums) / len(remaining_sums)
 
     factor = 0.3 + (round_num * 0.1)
